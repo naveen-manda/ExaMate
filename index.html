@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ExaMate | Home</title>
+</head>
+<body> 
+       
+            <section id="first">
+                <div class="logo"><a href="index.html">ExaMate</a></div>
+                <div class="right-nav">
+                    <div><a href="#second">SUBJECTS</a></div>
+                    <div><a href="#third">ABOUT ME</a></div>
+                </div>
+                <h1>Welcome</h1>
+                <div class="welcome-text">
+                    <ul>
+                        <li>ExaMate is an online platform for students to revise concepts from various subjects English Communication, Engineering Mathematics, Basic Electronics, Engineering Chemistry, Basic Engineering Mechanics and Python, in the form of PDF's.</li>
+                        <li>All the PDF's are neatly organized and also, you can view the contents of the PDF before opening it!</li>
+                        <li>All the best Preparing!!</li>
+                    </ul>
+                    
+                </div>
+            </section>
+
+            <section id="second">
+                <div class="heading">SUBJECTS</div>
+
+                    <div class="subs center">
+                        <ul>
+                            <li class="one" data-scroll><a href="python.html" >PYTHON</a><div class="lines"></div></li>
+                            <li class="two" data-scroll><a href="math.html">MATHEMATICS II</a><div class="lines"></div></li>
+                            <li class="three" data-scroll><a href="bem.html">MECHANICS</a><div class="lines"></div></li>
+                            <li class="four" data-scroll><a href="chemistry.html">CHEMISTRY</a><div class="lines"></div></li>
+                            <li class="five" data-scroll><a href="english.html">ENGLISH</a><div class="lines"></div></li>
+                            <li class="six" data-scroll><a href="be.html">BASIC ELECTRONICS</a><div class="lines"></div></li>
+                        </ul>
+                    </div>
+
+            </section>
+
+            <section id="third">
+                <div class="heading">ABOUT ME</div>
+                <div class="row">
+                        <div class="left image" data-scroll>
+                            <img src="./images/me.jpg" alt="me" class="center">
+                        </div>
+                        <div class="right center matter"  data-scroll>
+                            <p>
+                                My name is Naveen Manda and I am currently<br>pursuing my Bachelors of Engineering in Information<br> Technology at Vasavi College of Engineering, Hyderabad.<br><br>
+        
+                                The intention behind this project was primarily for working<br> on my Web Development skills and also, to provide a platform<br> for students to revise subjects from the second semester,<br> in an organized manner.<br><br>
+        
+                                I'd like to thank my friends Sravya, Santosh, Pallavi<br> and Srilekhya who helped me in collecting pdfs<br>and made my work easy
+                            </p>
+                        </div>  
+                </div>
+            </section>
+
+            <div class="menu-bars">
+                <input type="checkbox" class="toggle" id="Check" onclick="myFunction()">
+                <div class="back"> 
+                    <div class="bar">
+                        <div class="ham1"></div>
+                        <div class="ham2"></div>
+                        <div class="ham3"></div>
+                    </div>
+                </div>
+                <div class="main-menu" id="side-menu">
+                    <a href="index.html">HOME</a>
+                    <a href="python.html">PYTHON</a>
+                    <a href="math.html">MATHEMATICS II</a>
+                    <a href="bem.html">MECHANICS</a>
+                    <a href="chemistry.html">CHEMISTRY</a>
+                    <a href="english.html">ENGLISH</a>
+                    <a href="be.html">BASIC ELECTRONICS</a>
+                </div>
+            </div> 
+
+            
+
+            <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+            <script>
+                ScrollOut();
+            </script>
+            
+              <script>
+                  function myFunction()
+                  {
+                      var checkBox = document.getElementById("side-menu");
+                      var isChecked = document.getElementById("Check").checked;
+                      if(isChecked == true)
+                      {
+                          checkBox.style.transform = "translateX(0px)";
+                      }
+        
+                      else
+                      {
+                          checkBox.style.transform = "translateX(-1000px)";
+                      }
+                      
+                  }
+              </script>
+</body>
+</html>
